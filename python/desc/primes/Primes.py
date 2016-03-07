@@ -6,6 +6,9 @@ Module to test for primes.
 def is_prime(number):
     "Test if number is prime."
 
+    if number <= 0:
+        raise TypeError("is_prime expects natural number argument")
+
     if number == 1:
         return False
 

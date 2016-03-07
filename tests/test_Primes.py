@@ -28,6 +28,11 @@ class PrimesTestCase(unittest.TestCase):
         "Test that a non-integer returns a TypeError."
         self.assertRaises(TypeError, is_prime, 3.14159)
 
+    def test_non_positive_integer_raises_type_error(self):
+        "Test that a non-positive integer returns a TypeError."
+        self.assertRaises(TypeError, is_prime, 0)
+        self.assertRaises(TypeError, is_prime, -1)
+
 
 if __name__ == '__main__':
     unittest.main()
