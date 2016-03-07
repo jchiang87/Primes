@@ -7,10 +7,6 @@ From bash:
 ```
 $ source setup/setup.sh
 ```
-[t]csh:
-```
-$ source setup/setup.csh
-```
 
 ## Testing
 ```
